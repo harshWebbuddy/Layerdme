@@ -64,34 +64,34 @@ export const faqData = [
           "An AI ChatBot is a software that can simulate a conversation (or a chat) with a user in natural language through messaging applications, websites, mobile apps, or through the telephone.",
       },
       {
-        question: "What AI ChatBots are available on WhopMe.com?",
+        question: "What AI ChatBots are available on Layerd.com?",
         answer:
-          "WhopMe.com offers a variety of AI ChatBots including chatgpt4, chatgpt3.5, Google Bard, Anthropic’s Claude, Bing Chat, and Duck Duck Go Chat.",
+          "Layerd.com offers a variety of AI ChatBots including chatgpt4, chatgpt3.5, Google Bard, Anthropic’s Claude, Bing Chat, and Duck Duck Go Chat.",
       },
       {
-        question: "How do I use the AI ChatBots on WhopMe.com?",
+        question: "How do I use the AI ChatBots on Layerd.com?",
         answer:
           "Simply select the ChatBot you wish to interact with from the AI Chats section, and begin your conversation. The ChatBot will respond according to its programming and capabilities.",
       },
       {
-        question: "Can I train the AI ChatBots on WhopMe.com?",
+        question: "Can I train the AI ChatBots on Layerd.com?",
         answer:
-          "Yes, WhopMe.com offers a function in the Ai Custom Chat feature that allows users to train data via links and file upload.",
+          "Yes, Layerd.com offers a function in the Ai Custom Chat feature that allows users to train data via links and file upload.",
       },
       {
         question: "Are the AI ChatBots safe to use?",
         answer:
-          "Yes, the AI ChatBots on WhopMe.com are designed with user safety in mind. They do not store personal data unless explicitly provided by the user for the purpose of the conversation.",
+          "Yes, the AI ChatBots on Layerd.com are designed with user safety in mind. They do not store personal data unless explicitly provided by the user for the purpose of the conversation.",
       },
       {
         question: "Do the AI ChatBots learn from the conversations they have?",
         answer:
-          "The AI ChatBots on WhopMe.com are designed to improve their performance based on the conversations they have. However, they do not remember personal details about individuals unless specifically designed to do so for the purpose of enhancing the user experience.",
+          "The AI ChatBots on Layerd.com are designed to improve their performance based on the conversations they have. However, they do not remember personal details about individuals unless specifically designed to do so for the purpose of enhancing the user experience.",
       },
       {
         question: "Can the AI ChatBots understand any language?",
         answer:
-          "The AI ChatBots on WhopMe.com are primarily designed to understand and respond in English. However, some ChatBots may have multi-language capabilities.",
+          "The AI ChatBots on Layerd.com are primarily designed to understand and respond in English. However, some ChatBots may have multi-language capabilities.",
       },
       {
         question: "What if the AI ChatBot doesn't understand my query?",
@@ -105,9 +105,9 @@ export const faqData = [
           "Yes, the AI ChatBots can be used for a variety of professional or business purposes, including customer service, information retrieval, or even task automation.",
       },
       {
-        question: "Is there a cost to use the AI ChatBots on WhopMe.com?",
+        question: "Is there a cost to use the AI ChatBots on Layerd.com?",
         answer:
-          "The cost for using the AI ChatBots on WhopMe.com can vary. Please refer to our Pricing page for the most up-to-date information.",
+          "The cost for using the AI ChatBots on Layerd.com can vary. Please refer to our Pricing page for the most up-to-date information.",
       },
     ],
   },
@@ -121,9 +121,9 @@ export const faqData = [
       },
       {
         question:
-          "What are the different AI Code Writing tools available on WhopMe.com?",
+          "What are the different AI Code Writing tools available on Layerd.com?",
         answer:
-          "WhopMe.com offers a range of AI Writing tools including AI Code Writing, AI Code Refactor, AI Code Explainer, AI Code Rewriter, and AI Code Converter.",
+          "Layerd.com offers a range of AI Writing tools including AI Code Writing, AI Code Refactor, AI Code Explainer, AI Code Rewriter, and AI Code Converter.",
       },
       {
         question: "How does the AI Code Writing tool work?",
@@ -165,7 +165,7 @@ export const faqData = [
       {
         question: "Is my data safe when using the AI Writing tools?",
         answer:
-          "Yes, at WhopMe.com, we prioritize your privacy and security. We do not store your inputs or outputs and have implemented robust security measures to protect your data.",
+          "Yes, at Layerd.com, we prioritize your privacy and security. We do not store your inputs or outputs and have implemented robust security measures to protect your data.",
       },
     ],
   },
@@ -230,9 +230,9 @@ export const faqData = [
     title: "AI Voice",
     items: [
       {
-        question: "What is the AI Voice feature on WhopMe.com?",
+        question: "What is the AI Voice feature on Layerd.com?",
         answer:
-          "The AI Voice feature on WhopMe.com is a cutting-edge tool that utilizes advanced artificial intelligence to convert text into natural-sounding speech. This feature can be used for a variety of applications such as voiceovers, podcasts, audio books, and more.",
+          "The AI Voice feature on Layerd.com is a cutting-edge tool that utilizes advanced artificial intelligence to convert text into natural-sounding speech. This feature can be used for a variety of applications such as voiceovers, podcasts, audio books, and more.",
       },
       {
         question: "How does the AI Voice feature work?",
@@ -255,7 +255,7 @@ export const faqData = [
           "The usage limits depend on the subscription plan you choose. We offer a variety of plans to suit different needs and budgets. Please refer to our pricing page for more details.",
       },
       {
-        question: "Is my data safe with WhopMe.com?",
+        question: "Is my data safe with Layerd.com?",
         answer:
           "Yes, we take data privacy very seriously. All data is processed securely, and we do not store your text inputs or voice outputs unless explicitly permitted by you.",
       },
@@ -286,9 +286,9 @@ export const faqData = [
     title: "Personalized AI",
     items: [
       {
-        question: "What is the Personalized AI feature on WhopMe.com?",
+        question: "What is the Personalized AI feature on Layerd.com?",
         answer:
-          "The Personalized AI feature on WhopMe.com is an advanced tool that provides personalized experiences and recommendations based on user preferences. It includes Weather GPT, Interior AI, Movie Recommendation AI, Create Your Own Avatar, AI Age, and many more.",
+          "The Personalized AI feature on Layerd.com is an advanced tool that provides personalized experiences and recommendations based on user preferences. It includes Weather GPT, Interior AI, Movie Recommendation AI, Create Your Own Avatar, AI Age, and many more.",
       },
       {
         question: "How does the Personalized AI work?",
@@ -341,9 +341,9 @@ export const faqData = [
     title: "AI Images",
     items: [
       {
-        question: "What is the AI Image feature on WhopMe.com?",
+        question: "What is the AI Image feature on Layerd.com?",
         answer:
-          "The AI Image feature on WhopMe.com includes advanced AI tools like Dalle-3, Stable Diffusion, and Midjourney that help you generate, enhance, and modify images using AI technology.",
+          "The AI Image feature on Layerd.com includes advanced AI tools like Dalle-3, Stable Diffusion, and Midjourney that help you generate, enhance, and modify images using AI technology.",
       },
       {
         question: "How does the AI Image feature work?",
@@ -374,7 +374,7 @@ export const faqData = [
         question:
           "Can I use the images generated by the AI Image feature for commercial purposes?",
         answer:
-          "Yes, you can use the images generated by the AI Image feature for commercial purposes, subject to the terms and conditions of WhopMe.com.",
+          "Yes, you can use the images generated by the AI Image feature for commercial purposes, subject to the terms and conditions of Layerd.com.",
       },
       {
         question:
@@ -390,7 +390,7 @@ export const faqData = [
       {
         question: "What is the 'Create Your Own GPT' feature?",
         answer:
-          "The 'Create Your Own GPT' feature on WhopMe.com allows you to personalize your own version of the Generative Pretrained Transformer (GPT). You can train it with specific data to generate text that matches your unique needs.",
+          "The 'Create Your Own GPT' feature on Layerd.com allows you to personalize your own version of the Generative Pretrained Transformer (GPT). You can train it with specific data to generate text that matches your unique needs.",
       },
       {
         question: "How do I use the 'Create Your Own GPT' feature?",
@@ -406,13 +406,13 @@ export const faqData = [
         question:
           "Is my data safe when I use the 'Create Your Own GPT' feature?",
         answer:
-          "Absolutely. At WhopMe.com, we prioritize your privacy and security. Your data is only used for the purpose of training your GPT and is not shared with any third parties.",
+          "Absolutely. At Layerd.com, we prioritize your privacy and security. Your data is only used for the purpose of training your GPT and is not shared with any third parties.",
       },
       {
         question:
           "Can I use the 'Create Your Own GPT' for commercial purposes?",
         answer:
-          "Yes, you can use the outputs from your own GPT for commercial purposes, subject to the terms and conditions of WhopMe.com.",
+          "Yes, you can use the outputs from your own GPT for commercial purposes, subject to the terms and conditions of Layerd.com.",
       },
       {
         question:
@@ -433,7 +433,7 @@ export const faqData = [
       {
         question: "Can I share my personalized GPT with others?",
         answer:
-          "Yes, you have the option to share your GPT with others. However, the sharing of GPTs should comply with the privacy policies and terms of use of WhopMe.com.",
+          "Yes, you have the option to share your GPT with others. However, the sharing of GPTs should comply with the privacy policies and terms of use of Layerd.com.",
       },
       {
         question: "What makes the 'Create Your Own GPT' feature unique?",

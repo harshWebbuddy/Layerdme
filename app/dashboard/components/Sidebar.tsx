@@ -54,7 +54,7 @@ export default function Sidebar() {
           <div className="p-4">
             <div className="flex justify-between items-center">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="logo"
                 width={200}
                 height={100}

@@ -21,9 +21,9 @@ export default function page() {
               <p>My Referral URL</p>
               <div className="bg-[#454545] flex items-center justify-between pl-2 pr-0.5 sm:pr-0 sm:pl-4 rounded-lg">
                 <code className="whitespace-nowrap">
-                  https://whopme.com/?ref= DVEX8UDTAQHOODD
+                  https://Layerd.com/?ref= DVEX8UDTAQHOODD
                 </code>
-                <ClipBoard textToCopy="https://whopme.com/?ref= DVEX8UDTAQHOODD" />
+                <ClipBoard textToCopy="https://Layerd.com/?ref= DVEX8UDTAQHOODD" />
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function page() {
             <h1 className="text-2xl font-semibold">Send Invitation</h1>
             <p className="text-center">
               Send your referral link to your friends and tell them how cool is
-              WhopMe!
+              Layerd!
             </p>
           </div>
           <div className="bg-gradient-to-br from-[#ffffff10] to-[#8f8f8f02] backdrop-blur-md rounded-lg p-6 space-y-4 flex flex-col items-center w-full">
@@ -143,7 +143,7 @@ export default function page() {
             </p>
             <div className="flex flex-col md:flex-row gap-10 sm:items-center">
               <div className="w-full py-3 px-4 bg-transparent ring-1 ring-white/20 rounded-lg">
-                https://whopme.com/?ref= DVEX8UDTAQHOODD
+                https://Layerd.com/?ref= DVEX8UDTAQHOODD
               </div>
               <div className="flex gap-3">
                 {labels.map((label, index) => (

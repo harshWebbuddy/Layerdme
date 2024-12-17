@@ -7,7 +7,7 @@ export default function Main() {
     <section className="flex-1 w-full flex items-center justify-center p-3">
       <div className="w-full max-w-4xl mb-28 flex flex-col items-center space-y-7">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="logo"
           width={300}
           height={200}
