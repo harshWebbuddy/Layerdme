@@ -146,6 +146,42 @@ export const botOptions = [
     description:
       "Bing Chat is Microsoft's AI-powered chatbot that excels in providing quick, accurate information. It's a handy tool for answering queries and providing concise explanations.",
   },
+  {
+    icon: "/landing/Chatgpt4.png",
+    title: "Chat GPT 4",
+    description:
+      "Unleash the power of AI with our intelligent search engine. Experience precise, personalized, and faster search results, revolutionizing the way you browse.",
+  },
+  {
+    icon: "/landing/Chatgpt3.png",
+    title: "Chat GPT 3.5",
+    description:
+      "Harnessing the power of OpenAI's GPT-3.5, this chatbot delivers insightful responses and can carry out meaningful conversations, making it a reliable companion for various tasks.",
+  },
+  {
+    icon: "/landing/googleBard.png",
+    title: "Google bard",
+    description:
+      "Google Bard is a storytelling wizard, weaving narratives with the finesse of a seasoned author. It's your go-to AI for creating compelling stories and engaging content.",
+  },
+  {
+    icon: "/landing/anthopic.png",
+    title: "Anthopic’s Claude 2.0",
+    description:
+      "Claude, developed by Anthropic, is designed to understand and replicate human-like text patterns. It's a sophisticated AI chatbot that adds a touch of authenticity to every conversation.",
+  },
+  {
+    icon: "/landing/duckduckgo.png",
+    title: "Duck Duck go",
+    description:
+      "Duck Duck Go Chat prioritizes user privacy, providing a secure platform for AI-powered conversations. It's a chatbot that respects your privacy while delivering accurate responses.",
+  },
+  {
+    icon: "/landing/bingai.png",
+    title: "Bing Chat",
+    description:
+      "Bing Chat is Microsoft's AI-powered chatbot that excels in providing quick, accurate information. It's a handy tool for answering queries and providing concise explanations.",
+  },
 ];
 
 export const ImageAiOptions = [
