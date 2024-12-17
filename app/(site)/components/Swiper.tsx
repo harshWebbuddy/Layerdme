@@ -1,35 +1,39 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import React from "react";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/autoplay';
-
-import BoxComponent from './BoxComponent';
+import BoxComponent from "./BoxComponent";
 
 const SwiperComponent = ({ botOptions }) => {
   return (
     <div className="mt-20 mb-5">
       <Swiper
-        spaceBetween={10}
         slidesPerView={5}
-        loop={true}
+        spaceBetween={10}
         autoplay={{
-          delay: 1000, 
-          disableOnInteraction: false, 
+          delay: 0,
+          disableOnInteraction: false,
         }}
-        modules={[Autoplay]} // Ensure Autoplay module is registered
-        className="swiper-container"
+        loop
+        speed={10000}
+        modules={[Autoplay]}
+        className="mySwiper"
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+        }}
       >
         {botOptions.map((option, index) => (
           <SwiperSlide key={index}>
-            <BoxComponent
-              option={option}
-              index={index}
-              isFullWidth={true}
-              data-aos="flip-left"
-            />
+            <BoxComponent option={option} index={index} isFullWidth={true} />
           </SwiperSlide>
         ))}
       </Swiper>

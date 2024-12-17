@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Tools from "./components/Tools";
 import {
   AiPersonaObject,
-   botOptions,
+  botOptions,
   codeOptions,
   voiceOptions,
   writingOptions,
@@ -93,7 +93,7 @@ export default function Home() {
 
           <SwiperComponent botOptions={botOptions} />
         </div>
-        <div id="ai-images" className="mt-12 sm:mt-32" data-aos="fade-up">
+        <div id="ai-images" className="mt-12 sm:mt-20" data-aos="fade-up">
           <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
           <div>
             <Image
@@ -117,88 +117,7 @@ export default function Home() {
             />
           </div>
           <SixCardTab />
-          {/* <div className="flex sm:justify-center mt-5">
-            <button className="px-7 py-3.5 ring-1 ring-gray-200 hover:ring-transparent transition duration-300 hover:bg-primary-red rounded-xl">
-              Explore AI ChatBots
-            </button>
-          </div> */}
         </div>
-        {/* <div id="ai-images" className="mt-12 sm:mt-32" data-aos="fade-up">
-          <div className="absolute h-[900px] w-[70px] sm:w-[150px] bg-[#369933] left-[-250px] blur-[250px] rounded animate-pulse" />
-          <div
-            className="flex flex-col lg:flex-row gap-5 sm:gap-10"
-            data-aos="slide-right"
-          >
-            <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
-            <div>
-              <Image
-                src="/slash.png"
-                alt="Slashes"
-                height={300}
-                width={600}
-                draggable={false}
-                className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
-                data-aos="slide-right"
-              />
-              <h1
-                className="relative z-10 sm:text-center uppercase mt-4 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text"
-                data-aos="zoom-in"
-              >
-                Ai images
-              </h1>
-              <Image
-                src="/slash.png"
-                alt="Slashes"
-                height={300}
-                width={600}
-                draggable={false}
-                className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-14 hidden md:block select-none"
-                data-aos="slide-left"
-              />
-            </div>
-            <div className="relative w-full" data-aos="zoom-in">
-      <Image
-        src="/gifs/man-visualization.gif"
-        alt="visualization"
-        width={900}
-        height={600}
-        className="rounded-lg sm:rounded-3xl h-full w-full shadow-2xl shadow-[#2c2c2c] object-cover transition-transform duration-500 hover:scale-105"
-      />
-    </div>
-            <div className="w-full">
-              <div className="w-full hidden lg:flex items-center gap-3" data-aos="zoom-in">
-        <h1 className="uppercase text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-500 font-bold text-transparent bg-clip-text">
-          Ai images
-        </h1>
-        <div className="h-[3px] max-w-xl bg-gradient-to-r from-gray-500 via-gray-700/50 to-transparent flex-1" />
-      </div>
-              <div className="w-full" data-aos="fade-up">
-        <div
-          className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-rows-1 xl:grid-cols-2 gap-5 mt-5 sm:mt-10"
-          data-aos="zoom-in-right"
-        >
-          {ImageAiOptions.slice(0, 2).map((option, index) => (
-            <BoxComponent option={option} index={index} isFullWidth={true} onHover={function (index: number): void {
-              throw new Error("Function not implemented.");
-            } } />
-          ))}
-        </div>
-        <div className="mt-5" data-aos="fade-left">
-          {ImageAiOptions.slice(2).map((option, index) => (
-            <BoxComponent option={option} index={index} isFullWidth={true} onHover={function (index: number): void {
-              throw new Error("Function not implemented.");
-            } } />
-          ))}
-        </div>
-        <div className="w-full mt-10" data-aos="fade-up">
-          <button className="text-sm font-semibold ring-1 ring-gray-200 hover:ring-transparent transition duration-300 hover:bg-primary-red px-6 py-3.5 rounded-lg hover:scale-105">
-            Explore AI Image tools
-          </button>
-        </div>
-      </div>
-            </div>
-          </div>
-        </div> */}
 
         <div id="ai-writing" className="mt-28" data-aos="fade-up">
           <div className="absolute h-[900px] w-[70px] sm:w-[150px] bg-[#27ACB2] right-[-250px] blur-[250px] rounded animate-pulse" />
