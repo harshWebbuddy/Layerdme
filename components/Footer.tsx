@@ -11,9 +11,9 @@ function Footer() {
           <div className="md:w-1/5">
             <Logo />
             <p className="text-xs text-white/80 leading-relaxed mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi
-              officiis tempora ab dolorem? Quod rem porro itaque iusto
-              blanditiis ullam velit.
+              Unleash the power of AI with our intelligent search engine.
+              Experience precise, personalized, and faster search results,
+              revolutionizing the way you browse.
             </p>
             <button className="bg-red-600 text-sm px-4 py-2 rounded-lg mt-5">
               Explore the future
