@@ -5,68 +5,49 @@ import Hero from "./components/Hero";
 import Tools from "./components/Tools";
 import {
   AiPersonaObject,
-  ImageAiOptions,
-  botOptions,
+   botOptions,
   codeOptions,
   voiceOptions,
   writingOptions,
 } from "@/utils/constants/objects";
 import BoxComponent from "./components/BoxComponent";
 import StickyComponent from "./components/StickyComponent";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { useState } from "react";
-import "swiper/css";
-import "swiper/css/navigation";
+
 import SixCardTab from "./cardstab/page";
 import SwiperComponent from "./components/Swiper";
 
 export default function Home() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const slidesCount = botOptions.length;
-
-  const handleHover = (index: number) => {
-    setActiveIndex(index);
-  };
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div
-        className="w-full bg-[url('/background-image-earth-landing.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden"
-        data-aos="fade-down"
-      >
+      <div className="w-full bg-[url('/background-image-earth-landing.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
         <Hero />
         <div className="bg-gradient-to-b from-transparent to-[#16161b] inset-x-0 h-40 absolute bottom-0 w-full z-10" />
       </div>
       <section className="max-w-[1400px] w-full mx-auto p-2.5 sm:p-4">
         <div id="ai-search" className="mt-20">
+          <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
+          <div>
+            <Image
+              src="/slash.png"
+              alt="Slashes"
+              height={300}
+              width={600}
+              draggable={false}
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
+            />
+            <h1 className="relative z-10 sm:text-center uppercase mt-8 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text">
+              AI Chatbots
+            </h1>
+            <Image
+              src="/slash.png"
+              alt="Slashes"
+              height={300}
+              width={600}
+              draggable={false}
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-10 hidden md:block select-none"
+            />
+          </div>
           <div className="w-full flex sm:items-center flex-col">
-            <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
-            <div>
-              <Image
-                src="/slash.png"
-                alt="Slashes"
-                height={300}
-                width={600}
-                draggable={false}
-                className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
-                data-aos="slide-right"
-              />
-              <h1
-                className="relative z-10 sm:text-center uppercase mt-4 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text"
-                data-aos="zoom-in"
-              >
-                Ai search engine
-              </h1>
-              <Image
-                src="/slash.png"
-                alt="Slashes"
-                height={300}
-                width={600}
-                draggable={false}
-                className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-14 hidden md:block select-none"
-                data-aos="slide-left"
-              />
-            </div>
             <p
               className="text-sm text-gray-300 text-left sm:text-center max-w-3xl mt-6 leading-relaxed"
               data-aos="fade-up"
@@ -109,53 +90,8 @@ export default function Home() {
               className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-10 hidden md:block select-none"
             />
           </div>
-          {/* <div className="mt-20 mb-5">
-            <Swiper
-              spaceBetween={10}
-              slidesPerView={5}
-              pagination={{ clickable: true }}
-              loop={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-              className="swiper-container"
-              navigation={false}
-            >
-              <div className="flex flex-col-reverse xl:flex-row gap-5">
-                <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-5 mt-4 xl:mt-0">
-                  {botOptions.map((option, index) => (
-                    <SwiperSlide key={index}>
-                      <BoxComponent
-                        option={option}
-                        index={index}
-                        isFullWidth={true}
-                        data-aos="flip-left"
-                       />
-                    </SwiperSlide>
-                  ))}
-                </div>
-              </div>
-            </Swiper>
 
-            <div className="rouned-2xl swiper-nav-bar mt-4 relative w-full h-2 bg-[#636363]">
-              <div
-                className="active-bar h-full rouned-2xl  -translate-y-6 bg-[#D73B6B]"
-                style={{
-                  width: `${40}%`,
-                  transform: `translateX(${10 * activeIndex}%)`,
-                  transition: "transform 0.3s ease",
-                }}
-              />
-            </div>
-          </div> */}
-          <SwiperComponent botOptions={botOptions}/>
-          {/* <div className="flex sm:justify-center mt-5">
-            <button className="px-7 py-3.5 ring-1 ring-gray-200 hover:ring-transparent transition duration-300 hover:bg-primary-red rounded-xl">
-              Explore AI ChatBots
-            </button>
-          </div> */}
+          <SwiperComponent botOptions={botOptions} />
         </div>
         <div id="ai-images" className="mt-12 sm:mt-32" data-aos="fade-up">
           <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
@@ -180,7 +116,7 @@ export default function Home() {
               className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-10 hidden md:block select-none"
             />
           </div>
-     <SixCardTab/>
+          <SixCardTab />
           {/* <div className="flex sm:justify-center mt-5">
             <button className="px-7 py-3.5 ring-1 ring-gray-200 hover:ring-transparent transition duration-300 hover:bg-primary-red rounded-xl">
               Explore AI ChatBots
@@ -290,7 +226,6 @@ export default function Home() {
                   option={option}
                   index={index}
                   isFullWidth={true}
-                 
                 />
               ))}
             </div>
@@ -316,12 +251,7 @@ export default function Home() {
             data-aos="fade-up"
           >
             {writingOptions.slice(2).map((option, index) => (
-              <BoxComponent
-                option={option}
-                index={index}
-                isFullWidth={true}
-                 
-              />
+              <BoxComponent option={option} index={index} isFullWidth={true} />
             ))}
           </div>
           <div
@@ -381,12 +311,7 @@ export default function Home() {
             data-aos-duration="1000"
           >
             {voiceOptions.map((option, index) => (
-              <BoxComponent
-                option={option}
-                index={index}
-                isFullWidth={true}
-              
-              />
+              <BoxComponent option={option} index={index} isFullWidth={true} />
             ))}
           </div>
         </div>
@@ -438,7 +363,6 @@ export default function Home() {
                       option={option}
                       index={index}
                       isFullWidth={true}
-                      
                     />
                   ))}
                 </div>
@@ -448,7 +372,6 @@ export default function Home() {
                       option={option}
                       index={index}
                       isFullWidth={true}
-                      
                     />
                   ))}
                 </div>
@@ -533,7 +456,6 @@ export default function Home() {
                   isBorderShown={true}
                   key={index}
                   data-aos="zoom-in"
-                 
                 />
               ))}
             </div>

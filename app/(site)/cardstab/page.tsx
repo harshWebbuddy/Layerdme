@@ -41,22 +41,24 @@ const Layout2 = ({ children }: { children: React.ReactNode }) => {
           className="bg-transparent border-[#FFFFFF] border  p-2 flex flex-row shadow-lg items-center justify-center mx-auto rounded-3xl w-full max-w-[653px] transition duration-500"
           data-aos="zoom-in"
         >
-          {["Dalle -2", "Stable Diffusion", "Mid Journey","Create Avatar"].map((tab) => (
-            <div
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={clsx(
-                "w-full flex justify-center p-3 text-center rounded-xl cursor-pointer transition-all duration-300 transform",
-                activeTab === tab
-                  ? "bg-primary-lightgreen text-white hover:scale-105"
-                  : "hover:bg-gradient-to-b from-[#C82442] to to-[#D73B6B] hover:scale-105"
-              )}
-            >
-              <span className="text-base font-semibold capitalize">
-                {tab.charAt(0).toUpperCase() + tab.slice(1)}
-              </span>
-            </div>
-          ))}
+          {["Dalle -2", "Stable Diffusion", "Mid Journey", "Create Avatar"].map(
+            (tab) => (
+              <div
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={clsx(
+                  "w-full flex justify-center p-3 text-center rounded-xl    transition-all duration-300 transform",
+                  activeTab === tab
+                    ? "bg-gradient-to-r from-[#C82442] to-[#D73B6B] text-white shadow-lg scale-105" 
+                    : "hover:bg-[#D73B6B] hover:scale-105" 
+                )}
+              >
+                <span className="text-base font-semibold capitalize">
+                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </span>
+              </div>
+            )
+          )}
         </div>
         <div className="w-full px-4" data-aos="fade-up">
           {renderContent()}
