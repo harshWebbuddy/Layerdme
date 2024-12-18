@@ -1,8 +1,8 @@
 @import "../../../app/variables.scss";
 
 .craftBrand{
-    padding: 90px 0;
-    background:black;
+    padding: 0px 0;
+    background:transparent;
     overflow: hidden;
     @media screen and (max-width: $breakpoint_mobile_portrait) {
         padding: 40px 0;

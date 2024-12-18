@@ -54,7 +54,7 @@ export default function Home() {
               className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
             />
             <h1 className="relative z-10 sm:text-center uppercase mt-8 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text">
-              AI Chatbots
+              AI Search Engine
             </h1>
             <Image
               src="/slash.png"
@@ -456,9 +456,7 @@ export default function Home() {
           </div>
           <SixCardTabTwo />
         </div> */}
-      </section>
-
-      <div
+         <div
         id="ai-personalized"
         className="sm:mt-14 pt-14 pb-14 relative w-full"
         data-aos="fade-up"
@@ -534,70 +532,43 @@ export default function Home() {
           </div>
         </div>
       </div>
-<div className="bg-white">
-  <Education/>
-</div>
-      <div
-        id="create-your-own"
-        className="sm:mt-28 max-w-[1300px] mx-auto p-2.5 sm:p-4"
-        data-aos="fade-up"
-      >
-        <div
-          className="absolute h-[900px] w-[75px] sm:w-[150px] bg-primary-red right-[-250px] blur-[250px] rounded"
-          data-aos="fade-left"
-        />
-        <div className="w-full flex items-center gap-3">
-          <Image
-            src="/slash.png"
-            alt="Slashes"
-            height={300}
-            width={600}
-            draggable={false}
-            className="w-[300px] object-cover h-[70px] absolute left-0 translate-y-2"
-            data-aos="fade-right"
-          />
-          <h1
-            className="relative z-10 uppercase mt-4 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text"
-            data-aos="fade-in"
-          >
-            Create Your own gpt
-          </h1>
-          <div
-            className="h-[3px] max-w-4xl translate-y-1.5 bg-gradient-to-r from-gray-600 via-gray-800/50 to-transparent flex-1"
-            data-aos="zoom-in"
-          />
-        </div>
-        <div
-          className="flex flex-col md:flex-row items-center gap-10 mt-12"
-          data-aos="fade-up"
-        >
-          <p className="w-full text-white/70 text-sm sm:text-base">
-            <span className="uppercase font-bold text-white">
-              CREATE YOUR OWN GPT
-            </span>{" "}
-            <span className="leading-relaxed">
-              is a powerful feature that enables users to develop their own
-              customized AI models...
-            </span>
-          </p>
-          <div
-            className="bg-gradient-to-tl from-primary-red via-primary-yellow/40 to-transparent p-[1px] w-full rounded-2xl relative"
-            data-aos="zoom-in"
-          >
-            <div className="w-full bg-black rounded-2xl min-h-[300px]">
-              <Image
-                src="/landing/floating-bot.gif"
-                alt="floating-bot"
-                height={100}
-                width={300}
-                className="rounded-2xl mx-auto h-52 object-cover sm:h-auto"
-                draggable={false}
-              />
-            </div>
+        <div id="create-your" className="mt-12 sm:mt-20" data-aos="fade-up">
+          <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
+          <div>
+            <Image
+              src="/slash.png"
+              alt="Slashes"
+              height={300}
+              width={600}
+              draggable={false}
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
+            />
+            <h1 className="relative z-10 sm:text-center uppercase mt-8 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text">
+              Create Your OWN GPT
+            </h1>
+            <Image
+              src="/slash.png"
+              alt="Slashes"
+              height={300}
+              width={600}
+              draggable={false}
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-10 hidden md:block select-none"
+            />
+          </div>
+
+          <div>
+            <h3 className="font-extrabold text-[20px] sm:text-[36px] flex mt-32 items-center mx-auto justify-center">
+              <span>Instantly craft, brand, and launch </span>
+              your custom AI chat
+            </h3>
+            <Education />
           </div>
         </div>
-      </div>
+      </section>
 
+     
+
+     
       <div id="ai-tools" className="w-full">
         <Tools />
         <div id="user-form" className="w-full flex flex-between">
