@@ -89,7 +89,7 @@
   left: 50%;
   top: 20px;
   width: 2px;
-  border-left: 2px dashed #034737;
+  border-left: 2px dashed #D73B6B;
   height: 100%;
 }
 
@@ -101,7 +101,7 @@
 
 .craftBrand .appraoch_support_content ul li:hover:before {
   background: black;
-  border-color: #034737;
+  border-color: #D73B6B;
 }
 
 .craftBrand .appraoch_support_content ul li:nth-child(1):before {
@@ -126,7 +126,7 @@
   height: 86px;
   top: 20px;
   background: black;
-  border: 8px solid #03473754;
+  border: 8px solid #D73B6B66;
   border-radius: 100%;
   transform: translateX(-50%);
   display: flex;
