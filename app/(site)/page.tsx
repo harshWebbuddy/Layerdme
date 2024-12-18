@@ -284,7 +284,7 @@ export default function Home() {
             </Motion>
           </div>
         </div> */}
-        {/* <div id="ai-voice" className="mt-28" data-aos="fade-up">
+        <div id="ai-voice" className="mt-28" data-aos="fade-up">
           <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
           <div>
             <Image
@@ -361,7 +361,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* <div id="ai-codes" className="mt-14 sm:mt-28" data-aos="fade-up">
           <div
@@ -431,7 +431,7 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-        {/* <div id="ai-codes" className="mt-12 sm:mt-20" data-aos="fade-up">
+        <div id="ai-codes" className="mt-12 sm:mt-20" data-aos="fade-up">
           <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
           <div>
             <Image
@@ -455,7 +455,7 @@ export default function Home() {
             />
           </div>
           <SixCardTabTwo />
-        </div> */}
+        </div>
          <div
         id="ai-personalized"
         className="sm:mt-14 pt-14 pb-14 relative w-full"
