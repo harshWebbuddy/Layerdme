@@ -21,7 +21,7 @@ const Layout2 = ({ children }: { children: React.ReactNode }) => {
 
   const renderContent = () => {
     switch (activeTab) {
-      case "Dalle -2":
+      case "Code Writing":
         return <Company />;
       case "Stable Diffusion":
         return <Team />;
@@ -49,8 +49,8 @@ const Layout2 = ({ children }: { children: React.ReactNode }) => {
                 className={clsx(
                   "w-full flex justify-center p-3 text-center rounded-xl    transition-all duration-300 transform",
                   activeTab === tab
-                    ? "bg-gradient-to-r from-[#C82442] to-[#D73B6B] text-white shadow-lg scale-105" 
-                    : "hover:bg-[#D73B6B] hover:scale-105" 
+                    ? "bg-gradient-to-r from-[#C82442] to-[#D73B6B] text-white shadow-lg scale-105"
+                    : "hover:bg-[#D73B6B] hover:scale-105"
                 )}
               >
                 <span className="text-base font-semibold capitalize">

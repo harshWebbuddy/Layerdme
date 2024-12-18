@@ -15,6 +15,24 @@ import StickyComponent from "./components/StickyComponent";
 
 import SixCardTab from "./cardstab/page";
 import SwiperComponent from "./components/Swiper";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+// import Motion from "@/components/Motion";
+// import { ArrowWaveIcon, FocusIllustration, TrustPilotStarIcon } from "@/components/svgs";
+// import { QuotesIcon } from "@/components/svgs/svgs";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+// import Image from "next/image";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { A11y, Navigation, Pagination, Scrollbar } from "swiper/modules";
+// import { SwiperSlide, Swiper } from "swiper/react";
+import "swiper/swiper-bundle.css";
+import Motion from "./components/Motion";
+import SixCardTabTwo from "./cardstab copy/page";
+import Education from "./components/Education";
 
 export default function Home() {
   return (
@@ -93,7 +111,11 @@ export default function Home() {
 
           <SwiperComponent botOptions={botOptions} />
         </div>
-        <div id="ai-images" className="mt-12 sm:mt-20" data-aos="fade-up">
+        <div
+          id="ai-          images"
+          className="mt-12 sm:mt-20"
+          data-aos="fade-up"
+        >
           <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
           <div>
             <Image
@@ -120,27 +142,178 @@ export default function Home() {
         </div>
 
         <div id="ai-writing" className="mt-28" data-aos="fade-up">
-          <div className="absolute h-[900px] w-[70px] sm:w-[150px] bg-[#27ACB2] right-[-250px] blur-[250px] rounded animate-pulse" />
-          <div className="w-full flex items-center gap-3" data-aos="fade-right">
+          <div className="absolute h-[900px] w-[70px] sm:w-[150px] bg-[#27ACB2]  blur-[250px] rounded animate-pulse" />
+          <div className="flex flex-row w-full">
+            <div
+              className="w-full flex items-center gap-3"
+              data-aos="fade-right"
+            >
+              <Image
+                src="/slash.png"
+                alt="Slashes"
+                height={300}
+                width={600}
+                draggable={false}
+                className="w-[300px] object-cover h-[70px] absolute -left-80 translate-y-2"
+              />
+              <h1 className="relative z-10 uppercase mt-4 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text">
+                AI Writing
+              </h1>
+
+              {/* <div className="h-[3px] max-w-4xl translate-y-1.5 bg-gradient-to-r from-gray-600 via-gray-800/50 to-transparent flex-1" /> */}
+            </div>{" "}
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Diam eu nulla consectetur
+              elit sed in at vitae. Luctus orci vel lectus rhoncus nulla ac nec
+              elementum. Donec arcu ac nulla elementum nunc rhoncus orci.
+            </p>
+          </div>{" "}
+          <div
+            className="w-full flex justify-between items-center  max-w-[500px] right-[200px] absolute  gap-x-60 mt-10"
+            data-aos="zoom-in"
+          >
+            <button className="text-sm font-semibold ring-1 ring-gray-200 hover:ring-transparent transition duration-300 hover:bg-primary-red px-6 py-3.5 rounded-lg hover:scale-105">
+              Explore
+            </button>
+            <div className="flex flex-row gap-x-10 justify-between ">
+              {" "}
+              <button className="button-prev-slide   rounded-full flex text-white hover:text-[#D73B6B] transition-all duration-300">
+                <ArrowLeft size={30} />
+              </button>{" "}
+              <button className="button-next-slide     rounded-full flex     text-white hover:text-[#D73B6B] transition-all duration-300">
+                <ArrowRight size={30} />
+              </button>
+            </div>
+          </div>
+          <div className="mt-40 mb-5">
+            <Motion
+              transition={{ duration: 0.6, delay: 0.4 }}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              classNames="w-full"
+            >
+              <div className="w-full flex items-center px-8">
+                <Swiper
+                  modules={[Navigation, Scrollbar, A11y]}
+                  spaceBetween={25}
+                  loop={true}
+                  navigation={{
+                    nextEl: ".button-next-slide",
+                    prevEl: ".button-prev-slide",
+                  }}
+                  className="!w-full"
+                  slidesPerView={5}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 1,
+                    },
+                    640: {
+                      slidesPerView: 3,
+                    },
+                    1024: {
+                      slidesPerView: 5,
+                    },
+                  }}
+                >
+                  {writingOptions.map((option, index) => (
+                    <SwiperSlide key={index}>
+                      <BoxComponent
+                        option={option}
+                        index={index}
+                        isFullWidth={true}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </Motion>
+          </div>
+        </div>
+        {/* <div className="mt-20 px-6   py-20">
+          <div className="max-w-[1420px] mx-auto flex flex-col xl:flex-row gap-y-10 gap-x-5 xl:items-center">
+            <Motion
+              transition={{ duration: 0.6, delay: 0.4 }}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              classNames="w-full"
+            >
+              <div className="w-full flex items-center px-8">
+                <button className="button-prev-slide absolute -left-10 h-20 w-20 rounded-full flex justify-center items-center border border-dashed border-gray-400 hover:bg-primary-red hover:text-white hover:border-primary-red transition-all duration-300">
+                  <ArrowLeft size={30} />
+                </button>
+                <Swiper
+                  modules={[Navigation, Scrollbar, A11y]}
+                  spaceBetween={25}
+                  loop={true}
+                  navigation={{
+                    nextEl: ".button-next-slide",
+                    prevEl: ".button-prev-slide",
+                  }}
+                  className="!w-full"
+                  slidesPerView={5}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 1,
+                    },
+                    640: {
+                      slidesPerView: 3,
+                    },
+                    1024: {
+                      slidesPerView: 5,
+                    },
+                  }}
+                >
+                  {writingOptions.map((option, index) => (
+                    <SwiperSlide key={index}>
+                      <BoxComponent
+                        option={option}
+                        index={index}
+                        isFullWidth={true}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <button className="button-next-slide absolute -right-10 h-20 w-20 rounded-full flex justify-center items-center border border-dashed border-gray-400 hover:bg-primary-red hover:text-white hover:border-primary-red transition-all duration-300">
+                  <ArrowRight size={30} />
+                </button>
+              </div>
+            </Motion>
+          </div>
+        </div> */}
+        {/* <div id="ai-voice" className="mt-28" data-aos="fade-up">
+          <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
+          <div>
             <Image
               src="/slash.png"
               alt="Slashes"
               height={300}
               width={600}
               draggable={false}
-              className="w-[300px] object-cover h-[70px] absolute left-0 translate-y-2"
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
             />
-            <h1 className="relative z-10 uppercase mt-4 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text">
-              AI Writing
+            <h1 className="relative z-10 sm:text-center uppercase mt-8 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text">
+              AI Voice
             </h1>
-            <div className="h-[3px] max-w-4xl translate-y-1.5 bg-gradient-to-r from-gray-600 via-gray-800/50 to-transparent flex-1" />
+            <Image
+              src="/slash.png"
+              alt="Slashes"
+              height={300}
+              width={600}
+              draggable={false}
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-10 hidden md:block select-none"
+            />
           </div>
-          <div className="flex flex-col-reverse lg:flex-row gap-5 mt-10">
+          <div className="flex flex-row items-center w-full gap-x-10">
             <div
-              className="w-full grid grid-cols-1 sm:grid-cols-2 gap-5"
-              data-aos="zoom-in-right"
+              className="flex flex-row flex-grow justify-between max-w-[590px] gap-5 mt-20"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
             >
-              {writingOptions.slice(0, 2).map((option, index) => (
+              {voiceOptions.slice(0, 1).map((option, index) => (
                 <BoxComponent
                   option={option}
                   index={index}
@@ -148,94 +321,49 @@ export default function Home() {
                 />
               ))}
             </div>
-            <div
-              className="w-full relative sm:!max-h-[300px]"
-              data-aos="zoom-in-left"
-            >
-              <div className="bg-gradient-to-tl from-primary-red via-primary-yellow/40 to-transparent p-[3px] w-full rounded-3xl">
-                <div className="bg-black w-full h-full rounded-3xl">
-                  <Image
-                    src="/landing/ai-writing.gif"
-                    alt="Writing Ai"
-                    width={900}
-                    height={600}
-                    className="rounded-3xl w-full shadow-2xl shadow-[#2c2c2c] sm:!max-h-[300px] transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mt-5"
-            data-aos="fade-up"
-          >
-            {writingOptions.slice(2).map((option, index) => (
-              <BoxComponent option={option} index={index} isFullWidth={true} />
-            ))}
-          </div>
-          <div
-            className="w-full flex sm:justify-center mt-10"
-            data-aos="zoom-in"
-          >
-            <button className="text-sm font-semibold ring-1 ring-gray-200 hover:ring-transparent transition duration-300 hover:bg-primary-red px-6 py-3.5 rounded-lg hover:scale-105">
-              Explore AI Writing Tools
-            </button>
-          </div>
-        </div>
-
-        <div id="ai-voice" className="mt-14 sm:mt-28" data-aos="fade-up">
-          <div
-            className="absolute h-[400px] w-[125px] sm:w-[250px] bg-blue-700 left-[-250px] blur-[250px] rounded"
-            data-aos="zoom-in"
-            data-aos-duration="1500"
-          />
-          <div
-            className="w-full flex sm:items-center flex-col"
-            data-aos="fade-down"
-            data-aos-duration="1200"
-          >
-            <div>
+            <div className="flex justify-center flex-grow mt-20">
               <Image
-                src="/slash.png"
+                src="/svgs/mysvg1.svg"
                 alt="Slashes"
                 height={300}
                 width={600}
                 draggable={false}
-                className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
+                className=""
                 data-aos="fade-right"
                 data-aos-duration="1000"
               />
-              <h1
-                className="relative z-10 sm:text-center uppercase mt-4 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text"
-                data-aos="zoom-in"
-                data-aos-duration="800"
-              >
-                AI Voice
-              </h1>
+            </div>
+          </div>
+          <div className="flex flex-row -translate-x-12 items-center w-full gap-x-10">
+            <div className="flex justify-center flex-grow mt-20">
               <Image
-                src="/slash.png"
+                src="/svgs/mysvg2.svg"
                 alt="Slashes"
                 height={300}
                 width={600}
                 draggable={false}
-                className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-14 hidden md:block select-none"
-                data-aos="fade-left"
+                className=""
+                data-aos="fade-right"
                 data-aos-duration="1000"
               />
+            </div>{" "}
+            <div
+              className="flex flex-row flex-grow justify-between max-w-[590px] gap-5 mt-20"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              {voiceOptions.slice(1, 2).map((option, index) => (
+                <BoxComponent
+                  option={option}
+                  index={index}
+                  isFullWidth={true}
+                />
+              ))}
             </div>
           </div>
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-20"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          >
-            {voiceOptions.map((option, index) => (
-              <BoxComponent option={option} index={index} isFullWidth={true} />
-            ))}
-          </div>
-        </div>
+        </div> */}
 
-        <div id="ai-codes" className="mt-14 sm:mt-28" data-aos="fade-up">
+        {/* <div id="ai-codes" className="mt-14 sm:mt-28" data-aos="fade-up">
           <div
             className="absolute h-[900px] w-[150px] bg-[#726761] right-[-250px] blur-[250px] rounded"
             data-aos="zoom-in"
@@ -302,7 +430,32 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        {/* <div id="ai-codes" className="mt-12 sm:mt-20" data-aos="fade-up">
+          <div className="absolute h-[900px] sm:w-[150px] bg-orange-700 left-[-250px] blur-[250px] rounded" />
+          <div>
+            <Image
+              src="/slash.png"
+              alt="Slashes"
+              height={300}
+              width={600}
+              draggable={false}
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute left-0 -translate-y-1 select-none"
+            />
+            <h1 className="relative z-10 sm:text-center uppercase mt-8 text-2xl md:text-3xl bg-gradient-to-b from-white to-gray-600 font-bold text-transparent bg-clip-text">
+              AI Codes
+            </h1>
+            <Image
+              src="/slash.png"
+              alt="Slashes"
+              height={300}
+              width={600}
+              draggable={false}
+              className="md:w-[40%] max-w-[300px] md:max-w-none object-cover h-[70px] absolute right-0 -translate-y-10 hidden md:block select-none"
+            />
+          </div>
+          <SixCardTabTwo />
+        </div> */}
       </section>
 
       <div
@@ -381,7 +534,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+<div className="bg-white">
+  <Education/>
+</div>
       <div
         id="create-your-own"
         className="sm:mt-28 max-w-[1300px] mx-auto p-2.5 sm:p-4"
