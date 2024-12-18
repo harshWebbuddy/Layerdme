@@ -146,7 +146,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../../../styles/addition.scss";
+import "../../../styles/addition.css";
 function CraftBrand() {
   useEffect(() => {
     AOS.init();
